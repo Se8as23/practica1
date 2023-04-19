@@ -1,0 +1,413 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  display: table;
+  position: relative;
+}
+h1 {
+  margin: 0px auto;
+  display: table;
+  font-size: 26px;
+  padding: 40px 0px;
+  color: #002e5b;
+  text-align: center;
+}
+h1 span {
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+  display: table;
+  background-color: aqua;
+  margin-bottom: 50px;
+}
+#logo {
+  float: left;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #002e5b;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+nav {
+  width: auto;
+  float: right;
+}
+nav ul {
+  display: table;
+  float: right;
+}
+nav ul li {
+  float: left;
+}
+nav ul li:last-child {
+  padding-right: 0px;
+}
+nav ul li a {
+  color: #002e5b;
+  font-size: 18px;
+  padding: 25px 20px;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+}
+nav ul li a:hover {
+  background-color: #002e5b;
+  color: #fde428;
+  transition: all 0.5s ease 0s;
+}
+nav ul li a:hover i {
+  color: #fde428;
+  transition: all 0.5s ease 0s;
+}
+nav ul li a i {
+  padding-right: 10px;
+  color: #002e5b;
+  transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul {
+  display: table;
+  width: 25px;
+}
+.toggle-menu ul li {
+  width: 100%;
+  height: 3px;
+  background-color: #002e5b;
+  margin-bottom: 4px;
+}
+.toggle-menu ul li:last-child {
+  margin-bottom: 0px;
+}
+
+input[type='checkbox'],
+label {
+  display: none;
+}
+
+.content {
+  display: table;
+  margin-bottom: 60px;
+  width: 900px;
+}
+.content h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #002e5b;
+  border-bottom: 1px solid #fde428;
+  display: table;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7c7c7c;
+  text-align: justify;
+}
+
+footer {
+  display: table;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.social {
+  margin: 0px auto;
+  display: table;
+  display: table;
+}
+.social li {
+  float: left;
+  padding: 0px 10px;
+}
+.social li a {
+  color: #002e5b;
+  transition: all 0.5s ease 0s;
+}
+.social li a:hover {
+  color: #fde428;
+  transition: all 0.5s ease 0s;
+}
+
+@media only screen and (max-width: 1440px) {
+  section {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    padding: 20px 0px;
+  }
+  #logo {
+    padding: 0px;
+  }
+  input[type='checkbox'] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: none;
+  }
+  input[type='checkbox']:fous {
+    background: none;
+  }
+  label {
+    float: right;
+    padding: 8px 0px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  input[type='checkbox']:checked ~ nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 53px;
+    background-color: #002e5b;
+    padding: 0px;
+    z-index: 99;
+  }
+  nav ul {
+    width: auto;
+  }
+  nav ul li {
+    float: none;
+    padding: 0px;
+    width: 100%;
+    display: table;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+  }
+  nav ul li a i {
+    color: #fde428;
+    padding-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    padding: 25px 0px;
+  }
+  h1 span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 20px;
+  }
+  label {
+    padding: 5px 0px;
+  }
+  #logo {
+    font-size: 20px;
+  }
+  nav {
+    top: 47px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    padding: 20px 0px;
+  }
+}
+
+div {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  margin: 20px;
+  float: left;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+img:hover {
+  transform: scale(1.2);
+}
+#apartado1 {
+  width: 610px;
+  border: 3px solid #002e5b;
+  border-radius: 12px;
+  background-color: rgba(255, 166, 0, 0.999);
+}
+#apartado2 {
+  width: 610px;
+  border: 3px solid #002e5b;
+  border-radius: 12px;
+  background-color: rgb(0, 98, 255);
+}
+#apartado3 {
+  width: 610px;
+  border: 3px solid #002e5b;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 0, 0.582);
+}
+
+/* ESTILO CSS BOTONES*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #333333;
+  color: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/**ESTILOS FORMULARIO*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  color: #000000;
+}
+form {
+  margin-top: 20px;
+}
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type='submit'] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.error {
+  color: violet;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+/* Estilo para el contenido de la ventana modal */
+.modal {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  opacity: 10;
+  transform: scale(0.8);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Mostrar la ventana modal */
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* Mostrar el contenido de la ventana modal */
+.modal.active {
+  opacity: 1;
+  transform: scale(1);
+}
